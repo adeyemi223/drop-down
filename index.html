@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Dropdown Menu</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Soft <span>landing</span></div>
+        <div class="line">
+            <div class="menu_line"></div>
+            <div class="menu_line"></div>
+            <div class="menu_line"></div>
+        </div>
+
+        <nav class="nav_bar">
+            <ul>
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">features</a></li>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <script>
+        line = document.querySelector(".line");
+        line.onclick = function() {
+            navBar = document.querySelector(".nav_bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
